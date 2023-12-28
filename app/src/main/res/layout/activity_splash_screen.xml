@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashScreen"
+    android:background="?attr/colorOnPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="631dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_round_corners"
+            android:elevation="15sp"
+            android:src="@drawable/ic_baseline_alarm_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="189dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/nexa_bold"
+            android:text="@string/app_name"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/pBar"
+        android:padding="25sp"
+        android:indeterminate="false"
+        android:visibility="invisible"
+        android:max="80"
+        android:progress="0"
+        android:progressTint="?attr/colorSecondary"/>
+
+</LinearLayout>

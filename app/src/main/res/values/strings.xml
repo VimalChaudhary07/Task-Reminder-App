@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Task Remainder</string>
+    <string-array name="repeat_after">
+        <item>Never</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+    </string-array>
+</resources>
